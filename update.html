@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student Record – Bahrain Cultural Office</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.25rem;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #002776;
+            color: #fff;
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0a396f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" style="color:#fff;text-decoration:none;">Bahrain Cultural Office</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="new-students.html">New Students</a></li>
+                <li><a href="current-students.html">Current Students</a></li>
+                <li><a href="graduation.html">Graduation &amp; CHSI</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="section">
+            <h1>Update Student Record</h1>
+            <p>Use this form to inform the Bahrain Cultural Office of any changes to your personal details, contact information, address, university or programme. Keeping your record current helps us provide timely support.</p>
+            <form onsubmit="alert('Your update request has been submitted successfully.'); return false;">
+                <div class="form-group">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="student_ref">Student Reference Number (if applicable)</label>
+                    <input type="text" id="student_ref" name="student_ref">
+                </div>
+                <div class="form-group">
+                    <label for="university_name">University Name</label>
+                    <input type="text" id="university_name" name="university_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="update_type">What information would you like to update?</label>
+                    <select id="update_type" name="update_type" required>
+                        <option value="">Select</option>
+                        <option value="contact">Contact Details</option>
+                        <option value="address">Residential Address</option>
+                        <option value="academic">Academic Programme/Status</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="new_info">New Information</label>
+                    <textarea id="new_info" name="new_info" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason for Update</label>
+                    <textarea id="reason" name="reason" rows="2" required></textarea>
+                </div>
+                <button type="submit">Submit Update</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Student Life</h4>
+                <ul>
+                    <li><a href="new-students.html">New Students</a></li>
+                    <li><a href="current-students.html">Current Students</a></li>
+                    <li><a href="graduation.html">Graduation &amp; CHSI</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="announcements.html">Announcements</a></li>
+                    <li><a href="downloads.html">Downloads &amp; Forms</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© Bahrain Cultural Office in Beijing. All rights reserved.</p>
+    </footer>
+</body>
+</html>

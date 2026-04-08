@@ -1,0 +1,257 @@
+/*
+ * Simple CSS for the Bahrain Cultural Office website.
+ *
+ * The layout uses mobile‑first design principles and a clean,
+ * neutral palette appropriate for an official government site.
+ * This stylesheet applies to all pages in the website. It defines
+ * global typography, navigation, card layouts and responsive
+ * behaviours. You can refine colours, spacing or add media queries
+ * as needed.
+ */
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+a {
+    color: #0a5fb3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #002776;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #0a396f;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.hero {
+    background-color: #e5eef7;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #002776;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem auto;
+    font-size: 1rem;
+    color: #333;
+}
+
+.hero .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.btn {
+    background-color: #002776;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0a396f;
+}
+
+.section {
+    margin-top: 2rem;
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #002776;
+}
+
+.cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #002776;
+}
+
+.card p {
+    flex: 1;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.card .card-btn {
+    align-self: flex-start;
+    background-color: #002776;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.card .card-btn:hover {
+    background-color: #0a396f;
+}
+
+.announcement {
+    list-style: none;
+    padding: 0;
+}
+
+.announcement li {
+    background-color: #fff;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.emergency-strip {
+    background-color: #e63946;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 2rem;
+}
+
+.emergency-strip a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #002776;
+    color: #fff;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+footer .footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+footer h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .copyright {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #aac4e8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

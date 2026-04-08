@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form – Bahrain Cultural Office</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        }
+        form .form-group {
+            margin-bottom: 1rem;
+        }
+        form label {
+            display: block;
+            margin-bottom: 0.25rem;
+            font-weight: bold;
+        }
+        form input,
+        form textarea,
+        form select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #002776;
+            color: #fff;
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0a396f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" style="color:#fff;text-decoration:none;">Bahrain Cultural Office</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="new-students.html">New Students</a></li>
+                <li><a href="current-students.html">Current Students</a></li>
+                <li><a href="graduation.html">Graduation &amp; CHSI</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="section">
+            <h1>Student Registration Form</h1>
+            <p>Please complete the form below to register your details with the Bahrain Cultural Office. All information will be recorded for the purposes of your student file and used to support you during your studies in China.</p>
+            <form onsubmit="alert('Your registration has been submitted successfully.'); return false;">
+                <div class="form-group">
+                    <label for="fullname_en">Full Name (English)</label>
+                    <input type="text" id="fullname_en" name="fullname_en" required>
+                </div>
+                <div class="form-group">
+                    <label for="fullname_ar">Full Name (Arabic)</label>
+                    <input type="text" id="fullname_ar" name="fullname_ar" required>
+                </div>
+                <div class="form-group">
+                    <label for="passport">Passport Number</label>
+                    <input type="text" id="passport" name="passport" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="university">University Name</label>
+                    <input type="text" id="university" name="university" required>
+                </div>
+                <div class="form-group">
+                    <label for="program">Academic Programme</label>
+                    <input type="text" id="program" name="program" required>
+                </div>
+                <div class="form-group">
+                    <label for="level">Level of Study</label>
+                    <select id="level" name="level" required>
+                        <option value="">Select</option>
+                        <option value="Bachelor">Bachelor</option>
+                        <option value="Master">Master</option>
+                        <option value="Doctorate">Doctorate</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="city">City / Province (China)</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="china_phone">China Mobile Number</label>
+                    <input type="tel" id="china_phone" name="china_phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="bahrain_phone">Bahrain Mobile Number</label>
+                    <input type="tel" id="bahrain_phone" name="bahrain_phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="wechat">WeChat ID</label>
+                    <input type="text" id="wechat" name="wechat">
+                </div>
+                <div class="form-group">
+                    <label for="address">Residential Address in China</label>
+                    <textarea id="address" name="address" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="emergency_contact">Emergency Contact Name</label>
+                    <input type="text" id="emergency_contact" name="emergency_contact" required>
+                </div>
+                <div class="form-group">
+                    <label for="emergency_relation">Emergency Contact Relationship</label>
+                    <input type="text" id="emergency_relation" name="emergency_relation" required>
+                </div>
+                <div class="form-group">
+                    <label for="emergency_phone">Emergency Contact Number</label>
+                    <input type="tel" id="emergency_phone" name="emergency_phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+                <button type="submit">Submit Registration</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Student Life</h4>
+                <ul>
+                    <li><a href="new-students.html">New Students</a></li>
+                    <li><a href="current-students.html">Current Students</a></li>
+                    <li><a href="graduation.html">Graduation &amp; CHSI</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="announcements.html">Announcements</a></li>
+                    <li><a href="downloads.html">Downloads &amp; Forms</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© Bahrain Cultural Office in Beijing. All rights reserved.</p>
+    </footer>
+</body>
+</html>
